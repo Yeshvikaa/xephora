@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 
 // Port and MongoDB setup
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI || 'MONGODB_URI=mongodb+srv://yaduraj:yaduraj@cluster0.vsk89qe.mongodb.net/yaduraj?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI || 'https://xephora.onrender.com';
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
